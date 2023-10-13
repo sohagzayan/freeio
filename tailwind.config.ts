@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+const withMT = require("@material-tailwind/react/utils/withMT");
+
 type RecursiveKeyValuePair<T, U> = {
   [K in keyof T]: U | RecursiveKeyValuePair<T[K], U>;
 };
@@ -16,7 +18,7 @@ function withOpacity(
   };
 }
 
-const config: Config = {
+const config: Config = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -35,6 +37,7 @@ const config: Config = {
           white_shade: withOpacity("--e-global-white-color-shade"),
           off_white_shade: withOpacity("--e-global-off-white-shade"),
           cool_gray_shade: withOpacity("--e-global-cool-gray-shade"),
+          red_crimson_shade: withOpacity("--e-global-red-crimson-shade"),
           peach_shade: withOpacity("--e-global-peach-shade"),
         },
       },
@@ -46,6 +49,7 @@ const config: Config = {
           white_shade: withOpacity("--e-global-white-color-shade"),
           off_white_shade: withOpacity("--e-global-off-white-shade"),
           cool_gray_shade: withOpacity("--e-global-cool-gray-shade"),
+          red_crimson_shade: withOpacity("--e-global-red-crimson-shade"),
           peach_shade: withOpacity("--e-global-peach-shade"),
         },
       },
@@ -70,5 +74,5 @@ const config: Config = {
     },
   },
   plugins: [],
-};
+});
 export default config;
