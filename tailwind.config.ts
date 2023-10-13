@@ -35,6 +35,7 @@ const config: Config = {
           white_shade: withOpacity("--e-global-white-color-shade"),
           off_white_shade: withOpacity("--e-global-off-white-shade"),
           cool_gray_shade: withOpacity("--e-global-cool-gray-shade"),
+          peach_shade: withOpacity("--e-global-peach-shade"),
         },
       },
       backgroundColor: {
@@ -45,6 +46,7 @@ const config: Config = {
           white_shade: withOpacity("--e-global-white-color-shade"),
           off_white_shade: withOpacity("--e-global-off-white-shade"),
           cool_gray_shade: withOpacity("--e-global-cool-gray-shade"),
+          peach_shade: withOpacity("--e-global-peach-shade"),
         },
       },
       gradientColorStops: {

@@ -12,6 +12,7 @@
     --e-global-white-color-shade: 255, 255, 255;
     --e-global-off-white-shade: 240, 239, 236;
     --e-global-cool-gray-shade: 233, 233, 233;
+    --e-global-peach-shade: 255, 237, 232;
     --e-global-primary-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
   }
   .theme-dark {
@@ -21,6 +22,7 @@
     --e-global-off-white-shade: #f0efec;
     --e-global-cool-gray-shade: #e9e9e9;
     --e-global-medium-light-gray: #6b7177;
+    --e-global-peach-shade: #ffede8;
     --e-global-primary-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
   }
 }
