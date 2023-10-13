@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['bookworm.madrasthemes.com'],
+        domains: ['bookworm.madrasthemes.com','creativelayers.net'],
       },
 }
 
