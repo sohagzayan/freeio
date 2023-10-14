@@ -13,7 +13,7 @@ const CategoriesList = () => {
                 className='flex items-center gap-5 gap-y-3 overflow-scroll lg:overflow-hidden '
             >
                 {categories.map((category, index) => (
-                    <Link href="#" className="relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-skin-dark_gray_shade text-[14px] font-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
+                    <Link href="#" key={category + index} className="relative w-fit block after:block after:content-[''] after:absolute after:h-[2px] after:bg-skin-dark_gray_shade text-[14px] font-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center">
                         {category}
                     </Link>
                 ))}

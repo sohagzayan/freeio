@@ -48,7 +48,7 @@ const Hero = () => {
                                 </div>
 
                                 <div className="w-full border-b md:border-b-transparent md:border-cool_gray_shade py-2 md:py-0">
-                                    <Select className="" style={{ border: "2px solid transparent", outline: "none" }} multi={false} options={options} onChange={(selectValue) => setSelectValue(selectValue)} values={selectValue} placeholder="Choose Category" />
+                                    <Select style={{ border: "2px solid transparent", outline: "none" }} multi={false} options={options} onChange={(selectValue) => setSelectValue(selectValue)} values={selectValue} placeholder="Choose Category" />
                                 </div>
                                 <div className="">
                                     <ButtonPrimary handleButton={handleButton} classList="bg-skin-dark_gray_shade border border-dark_gray_shade   text-skin-white_shade hover:text-skin-white_shade hover:border-green_shade">Search</ButtonPrimary>

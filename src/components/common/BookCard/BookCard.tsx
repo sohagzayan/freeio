@@ -1,7 +1,6 @@
 "use client"
 import Image from "next/image";
 import { useState } from 'react';
-import Heart from "react-animated-heart";
 
 interface ProductsType {
     data: {
@@ -20,7 +19,7 @@ interface ProductsType {
 
 
 const BookCard = ({ data }: ProductsType) => {
-    const [isClick, setClick] = useState(false);
+    const [isClickTrue, setClickTrue] = useState(false);
     const [showExtraCardInfo, setShowExtraCardInfo] = useState(false);
     const handleHoverShow = () => {
         setShowExtraCardInfo((prev) => !prev)
@@ -62,8 +61,7 @@ const BookCard = ({ data }: ProductsType) => {
                 </div>
             </div>
             <div className="absolute top-[-30px] right-[-30px] scale-75">
-                <Heart isClick={isClick} onClick={() => setClick(!isClick)} />
-
+                {/* <Heart isClick={isClickTrue} onClick={() => setClickTrue(!isClickTrue)} /> */}
             </div>
         </div>
     )

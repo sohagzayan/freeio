@@ -37,12 +37,12 @@ const HighestRatedSeller = () => {
                         navigation={true}
                         modules={[Navigation]}
 
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        // onSlideChange={() => console.log('slide change')}
+                        // onSwiper={(swiper) => console.log(swiper)}
                         className="mySwiper"
 
                     >
-                        {users.slice(0, 5).map((p) => <SwiperSlide><TopSellerCard data={p} /></SwiperSlide>)}
+                        {users.slice(0, 5).map((p, i) => <SwiperSlide key={p.id + i}><TopSellerCard data={p} /></SwiperSlide>)}
                     </Swiper>
                 </div>
             </div>

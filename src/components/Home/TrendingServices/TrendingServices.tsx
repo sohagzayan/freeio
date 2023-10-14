@@ -28,8 +28,7 @@ const TrendingServices = () => {
                     </div>
                     <div className="xl:col-span-9 flex flex-col justify-end">
                         <ul className="grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4">
-                            {filtering.map((f) => <li><button className={`border   rounded-[15px] px-[17px] py-[7px] font-[500] text-[15px] antialiased text-skin-dark_gray_shade ${f === activeFilter ? "text-skin-green_shade border-cool_gray_shade shadow-sm" : "border-transparent"}`}>{f}</button></li>)}
-                        </ul>
+                            {filtering.map((f, i) => <li key={f + i}><button className={`border   rounded-[15px] px-[17px] py-[7px] font-[500] text-[15px] antialiased text-skin-dark_gray_shade ${f === activeFilter ? "text-skin-green_shade border-cool_gray_shade shadow-sm" : "border-transparent"}`}>{f}</button></li>)}                        </ul>
                     </div>
                 </div>
                 <div className="mt-14">
@@ -39,17 +38,14 @@ const TrendingServices = () => {
                         navigation={true}
                         modules={[Navigation]}
 
-                        onSlideChange={() => console.log('slide change')}
-                        onSwiper={(swiper) => console.log(swiper)}
+                        // onSlideChange={() => console.log('slide change')}
+                        // onSwiper={(swiper) => console.log(swiper)}
                         className="mySwiper"
 
                     >
-                        {products.slice(0, 5).map((p) => <SwiperSlide><BookCard data={p} /></SwiperSlide>)}
+                        {products.slice(0, 5).map((p, i) => <SwiperSlide key={p.id + i}><BookCard data={p} /></SwiperSlide>)}
                     </Swiper>
                 </div>
-                {/* <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4 py-20">
-                    {products.slice(0, 5).map((p) => <BookCard data={p} />)}
-                </div> */}
             </div>
         </div>
     )

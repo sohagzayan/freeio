@@ -32,7 +32,7 @@ const TopSellerCard = ({ data }: TopSellerCard) => {
                         <span className="text-[14px] font-primary text-skin-medium_light_gray font-[500] mb-1 inline-block">{data?.username}</span>
                         <h4 className="flex  items-center font-[400] text-skin-dark_gray_shade justify-center gap-1"><i className="ri-star-s-fill text-[#e1c141] text-lg"></i>{data?.rating} <span className="text-skin-medium_light_gray ">({data?.totalReviews} reviews)</span></h4>
                         <div className="flex items-center  mt-3 border-b border-cool_gray_shade pb-3">
-                            {data?.shopCategory.map((c, i) => <span className="mr-2 bg-skin-peach_shade px-4 py-1 rounded-md capitalize text-skin-dark_gray_shade font-[400] font-primary text-[14px]" key={i}>{c}</span>)}
+                            {data?.shopCategory.map((c, i) => <span className="mr-2 bg-skin-peach_shade px-4 py-1 rounded-md capitalize text-skin-dark_gray_shade font-[400] font-primary text-[14px]" key={i + c}>{c}</span>)}
                         </div>
                         <div>
                             <h3 className="flex items-center gap-10 py-2 font-[500] text-[15px] text-skin-dark_gray_shade font-primary">
