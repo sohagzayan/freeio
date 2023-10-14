@@ -63,6 +63,7 @@ const config: Config = withMT({
         green_shade: withOpacity("--e-global-primary-color"),
         cool_gray_shade: withOpacity("--e-global-cool-gray-shade"),
       },
+
       boxShadow: {
         primary_shadow: "var(--e-global-primary-shadow)",
       },
