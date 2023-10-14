@@ -5,9 +5,6 @@ import { Button } from "@material-tailwind/react"
 import Image from "next/image"
 
 const AuthSocial = () => {
-    const handleButton = () => {
-
-    }
     return (
         <div className="mt-5">
             <div className="grid grid-cols-2 gap-4  ">

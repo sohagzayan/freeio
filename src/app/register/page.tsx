@@ -5,7 +5,7 @@ import Footer from "@/components/common/Footer/Footer"
 import AuthField from "@/components/common/InputField/AuthField"
 import Link from "next/link"
 
-const page = () => {
+const Register = () => {
     const inputHandle = () => {
 
     }
@@ -43,4 +43,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Register
