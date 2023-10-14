@@ -21,7 +21,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="text-skin-white_shade font-[400] font-primary lg:col-span-2 md:col-span-4 col-span-12 sm:col-span-6">
-                        <h3 className="font-[500] text-[24px]">Navigation</h3>
+                        <h3 className="font-[500] text-[20px]">Navigation</h3>
                         <ul className="mt-5 flex flex-col gap-4">
                             <li>Home</li>
                             <li>About Us</li>
@@ -30,7 +30,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="text-skin-white_shade font-[400] font-primary lg:col-span-2 md:col-span-4 col-span-12 sm:col-span-6">
-                        <h3 className="font-[500] text-[24px]">Services</h3>
+                        <h3 className="font-[500] text-[20px]">Services</h3>
                         <ul className="mt-5 flex flex-col gap-4">
                             <li>Home Cleaning</li>
                             <li>Office Cleaning</li>
@@ -39,12 +39,12 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="text-skin-white_shade font-[400] font-primary lg:col-span-4 md:col-span-6 col-span-12 sm:col-span-6">
-                        <h3 className="font-[500] text-[24px]">Subscribe to Newsletter
+                        <h3 className="font-[500] text-[20px]">Subscribe to Newsletter
                         </h3>
                         <ul className="mt-5 flex  items-left flex-col">
                             <li>
                                 <input
-                                    className="h-20 w-full px-5 rounded-full outline-none text-skin-dark_gray_shade bg-skin-white_shade"
+                                    className="h-14 w-full px-5 rounded-full outline-none text-skin-dark_gray_shade bg-skin-white_shade"
                                     type="text" placeholder="Enter your email" />
                             </li>
                             <li>

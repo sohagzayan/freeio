@@ -24,7 +24,9 @@ const Navbar = () => {
       <div className='container mx-auto px-4 md:px-10 py-4 font-primary '>
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-5'>
-            <Image src={Logo} width={100} height={100} alt='logo' />
+            <Link href="/">
+              <Image src={Logo} width={100} height={100} alt='logo' />
+            </Link>
             <div className="lg:block hidden">
               <div className='flex items-center gap-5 '>
                 {nav_menu.map((m, i) => {
@@ -41,8 +43,12 @@ const Navbar = () => {
           <div className="lg:block hidden">
             <div className="flex items-center gap-4">
               <button className="hover:text-skin-green_shade transition-all duration-100 ease">Become a Seller</button>
-              <ButtonPrimary handleButton={handleButton} classList="bg-transparent border border-dark_gray_shade text-skin-dark_gray_shade hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonPrimary>
-              <ButtonPrimary handleButton={handleButton} classList="bg-skin-dark_gray_shade border border-dark_gray_shade text-skin-white_shade hover:text-skin-white_shade hover:border-green_shade">Join</ButtonPrimary>
+              <Link href="/account/register">
+                <ButtonPrimary handleButton={handleButton} classList="bg-transparent border border-dark_gray_shade text-skin-dark_gray_shade hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonPrimary>
+              </Link>
+              <Link href="/account/login">
+                <ButtonPrimary handleButton={handleButton} classList="bg-skin-dark_gray_shade border border-dark_gray_shade text-skin-white_shade hover:text-skin-white_shade hover:border-green_shade">Log In</ButtonPrimary>
+              </Link>
             </div>
           </div>
           <div className="lg:hidden block ">
