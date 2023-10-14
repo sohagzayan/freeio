@@ -24,7 +24,7 @@ const page = () => {
                         <div>
                             <h3 className="text-[20px] font-[500] text-skin-dark_gray_shade font-primary mb-2">Let's create your account!
                             </h3>
-                            <p className="text-[14px] font-[500] text-skin-dark_gray_shade font-primary">Already have an account? <Link className="text-skin-green_shade" href="/login">Log In!</Link></p>
+                            <p className="text-[14px] font-[500] text-skin-dark_gray_shade font-primary">Already have an account? <Link className="text-skin-green_shade" href="/account/login">Log In!</Link></p>
                         </div>
                         <form action="" className="mt-4 block">
                             <AuthField onChange={inputHandle} name="display-name" value="df" type="text" label="Display Name" placeholder="ali" />
