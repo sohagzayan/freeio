@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-5'>
             <Link href="/">
-              <Image src={Logo} width={100} height={100} alt='logo' />
+              <Image src={Logo} width={100} height={100} alt='logos' />
             </Link>
             <div className="lg:block hidden">
               <div className='flex items-center gap-5 '>
