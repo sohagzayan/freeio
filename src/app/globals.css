@@ -29,10 +29,6 @@
   }
 }
 
-* {
-  word-break: break-all;
-}
-
 /* slider overwrite styles */
 
 .swiper-button-prev {
