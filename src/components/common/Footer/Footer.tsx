@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="container px-4 md:px-10 mx-auto py-10">
                 <div className="grid grid-cols-12 gap-6 ">
                     <div className=" md:col-span-4  lg:col-span-4 col-span-12 sm:col-span-6">
-                        <Image src={Logo} width={160} height={160} className="mb-4" alt="logo" />
+                        <Image src={Logo} width="0" height="0" sizes="100vw" className="w-[100%] h-auto mb-4" alt="logo" />
                         <p className="text-skin-white_shade font-[400] mb-4 text-[14px] font-primary">Leo elementum iaculis quam massa vitae odio sed. Morbi tincidunt senectus.</p>
                         <div className="text-skin-green_shade flex items-center gap-3">
                             <span><i className="ri-twitter-fill text-3xl cursor-pointer hover:opacity-80 transition-all ease-in-out duration-200"></i></span>
