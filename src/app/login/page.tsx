@@ -1,5 +1,11 @@
 "use client"
+import AuthSocial from "@/components/common/AuthSocial/AuthSocial"
+import ButtonLarge from "@/components/common/Button/ButtonLarge"
+import Divider from "@/components/common/Divider/Divider"
 import Footer from "@/components/common/Footer/Footer"
+import AuthField from "@/components/common/InputField/AuthField"
+import { Checkbox } from "@material-tailwind/react"
+import Link from "next/link"
 
 const page = () => {
     const inputHandle = () => {
@@ -16,7 +22,7 @@ const page = () => {
                         <h3 className="text-[32px] font-[700] text-skin-dark_gray_shade font-primary mb-2">Log In</h3>
                         <p className="text-[14px] font-[400] text-skin-dark_gray_shade font-primary">Give your visitor a smooth online experience with a solid UX design</p>
                     </div>
-                    {/* <div className="bg-skin-white_shade rounded-lg p-8">
+                    <div className="bg-skin-white_shade rounded-lg p-8">
                         <div>
                             <h3 className="text-[20px] font-[500] text-skin-dark_gray_shade font-primary mb-2">We're glad to see you again!
                             </h3>
@@ -37,7 +43,7 @@ const page = () => {
                         </form>
                         <Divider />
                         <AuthSocial />
-                    </div> */}
+                    </div>
                 </div>
             </div>
             <Footer />
