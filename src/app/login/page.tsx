@@ -1,4 +1,5 @@
 "use client"
+import AuthSocial from "@/components/common/AuthSocial/AuthSocial"
 import ButtonLarge from "@/components/common/Button/ButtonLarge"
 import Divider from "@/components/common/Divider/Divider"
 import Footer from "@/components/common/Footer/Footer"
@@ -39,7 +40,7 @@ const page = () => {
                             <ButtonLarge handleButton={handleButton} classList="bg-skin-green_shade border border-dark_gray_shade text-skin-white_shade w-full  hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonLarge>
                         </form>
                         <Divider />
-                        {/* <AuthSocial /> */}
+                        <AuthSocial />
                     </div>
                 </div>
             </div>
