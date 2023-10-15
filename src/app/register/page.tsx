@@ -1,9 +1,11 @@
+"use client"
 import AuthSocial from "@/components/common/AuthSocial/AuthSocial"
 import ButtonLarge from "@/components/common/Button/ButtonLarge"
 import Divider from "@/components/common/Divider/Divider"
 import Footer from "@/components/common/Footer/Footer"
 import AuthField from "@/components/common/InputField/AuthField"
 import Link from "next/link"
+import { useEffect } from "react"
 
 const Register = () => {
     const inputHandle = () => {
@@ -12,6 +14,9 @@ const Register = () => {
     const handleButton = () => {
 
     }
+    useEffect(() => {
+        console.log("first")
+    },)
     return (
         <div className="bg-skin-peach_shade">
             <div className="container mx-auto md:px-10 px-4 py-20 lg:w-[55%] md:w-[70%] w-[100%]">
