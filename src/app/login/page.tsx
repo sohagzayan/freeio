@@ -1,9 +1,5 @@
 "use client"
-import AuthSocial from "@/components/common/AuthSocial/AuthSocial"
-import ButtonLarge from "@/components/common/Button/ButtonLarge"
-import Divider from "@/components/common/Divider/Divider"
 import Footer from "@/components/common/Footer/Footer"
-import AuthField from "@/components/common/InputField/AuthField"
 import Link from "next/link"
 
 const page = () => {
@@ -28,8 +24,8 @@ const page = () => {
                             <p className="text-[14px] font-[500] text-skin-dark_gray_shade font-primary">Don't have an account? <Link className="text-skin-green_shade" href="/account/register">Sign Up!</Link></p>
                         </div>
                         <form className="mt-4 block">
-                            <AuthField onChange={inputHandle} name="display-name" value="df" type="email" label="Email" placeholder="alitf58@gmail.com" />
-                            <AuthField onChange={inputHandle} name="display-name" value="df" type="password" label="Password" placeholder="*******" />
+                            {/* <AuthField onChange={inputHandle} name="display-name" value="df" type="email" label="Email" placeholder="alitf58@gmail.com" />
+                            <AuthField onChange={inputHandle} name="display-name" value="df" type="password" label="Password" placeholder="*******" /> */}
                             <div className="flex items-center justify-between pb-2">
                                 <div>
                                     {/* <Checkbox label="Remember Me" crossOrigin={undefined} /> */}
@@ -38,10 +34,10 @@ const page = () => {
                                     <Link className="text-[14px] font-primary text-skin-dark_gray_shade hover:text-skin-green_shade transition-all ease-in-out duration-150" href="/">Lost your password?</Link>
                                 </div>
                             </div>
-                            <ButtonLarge handleButton={handleButton} classList="bg-skin-green_shade border border-dark_gray_shade text-skin-white_shade w-full  hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonLarge>
+                            {/* <ButtonLarge handleButton={handleButton} classList="bg-skin-green_shade border border-dark_gray_shade text-skin-white_shade w-full  hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonLarge> */}
                         </form>
-                        <Divider />
-                        <AuthSocial />
+                        {/* <Divider />
+                        <AuthSocial /> */}
                     </div>
                 </div>
             </div>
