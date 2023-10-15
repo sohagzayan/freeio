@@ -1,8 +1,4 @@
-"use client"
-import FacebookIcon from "@/assets/images/facebook-line.svg"
-import GoogleIcon from "@/assets/images/google.svg"
 import { Button } from "@material-tailwind/react"
-import Image from "next/image"
 
 const AuthSocial = () => {
     return (
@@ -14,7 +10,7 @@ const AuthSocial = () => {
                     color="blue-gray"
                     className="flex items-center gap-3"
                 >
-                    <Image src={GoogleIcon} alt="metamask" className="h-6 w-6" />
+                    {/* <Image src={GoogleIcon} alt="metamask" className="h-6 w-6" /> */}
                     Sign in with Twitter
 
                 </Button>
@@ -26,7 +22,7 @@ const AuthSocial = () => {
                 >
                     Sign in with Twitter
                     <span className="absolute right-0 grid h-full w-12 place-items-center bg-light-blue-600 transition-colors group-hover:bg-light-blue-700">
-                        <Image src={FacebookIcon} alt="metamask" className="h-6 w-6" />
+                        {/* <Image src={FacebookIcon} alt="metamask" className="h-6 w-6" /> */}
                     </span>
                 </Button>
             </div>
