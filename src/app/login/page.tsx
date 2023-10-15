@@ -1,4 +1,5 @@
 "use client"
+import ButtonLarge from "@/components/common/Button/ButtonLarge"
 import Footer from "@/components/common/Footer/Footer"
 import Link from "next/link"
 
@@ -34,7 +35,7 @@ const page = () => {
                                     <Link className="text-[14px] font-primary text-skin-dark_gray_shade hover:text-skin-green_shade transition-all ease-in-out duration-150" href="/">Lost your password?</Link>
                                 </div>
                             </div>
-                            {/* <ButtonLarge handleButton={handleButton} classList="bg-skin-green_shade border border-dark_gray_shade text-skin-white_shade w-full  hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonLarge> */}
+                            <ButtonLarge handleButton={handleButton} classList="bg-skin-green_shade border border-dark_gray_shade text-skin-white_shade w-full  hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonLarge>
                         </form>
                         {/* <Divider />
                         <AuthSocial /> */}
