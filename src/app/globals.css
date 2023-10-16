@@ -57,3 +57,15 @@
 .swiper-button-next::after {
   font-size: 20px !important;
 }
+
+#AuthPassword {
+  height: 100% !important;
+  width: 100% !important;
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+  padding: 0 15px !important;
+}
+#AuthPassword:focus {
+  background-color: transparent !important;
+}

@@ -7,12 +7,15 @@ import ButtonPrimary from "@/components/common/Button/ButtonPrimary";
 import { makeTrueIsOpen } from "@/redux/features/mobileSideBarSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hooks";
 import { nav_menu } from '@/utility/menu';
+import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 
 
 const Navbar = () => {
+  const { data: session } = useSession();
+  console.log("home here", session)
   const isOpen = useAppSelector((state) => state.mobileSideBarSlice.isOpen);
   const dispatch = useAppDispatch();
 
@@ -49,6 +52,13 @@ const Navbar = () => {
               <Link href="/account/login">
                 <ButtonPrimary handleButton={handleButton} classList="bg-skin-dark_gray_shade border border-dark_gray_shade text-skin-white_shade hover:text-skin-white_shade hover:border-green_shade">Log In</ButtonPrimary>
               </Link>
+              {session && <button
+                onClick={async () => {
+                  await signOut({ callbackUrl: "/", })
+                }}
+
+              >Logout</button>}
+
             </div>
           </div>
           <div className="lg:hidden block ">

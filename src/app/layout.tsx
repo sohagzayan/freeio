@@ -1,10 +1,13 @@
 import MobileMenu from '@/components/common/MobileMenu/MobileMenu'
 import Navbar from '@/components/common/Navbar/Navbar'
+import PrimaryToaster from '@/components/common/PrimaryToaster/PrimaryToaster'
 import { Providers } from "@/redux/provider"
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import 'remixicon/fonts/remixicon.css'
 import './globals.css'
+import { NextAuthProvider } from "./providers"
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,14 +20,19 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
     <html lang="en">
       <body className={inter.className} >
-        <Providers>
-          <Navbar />
-          <MobileMenu />
-          {children}
-        </Providers>
+        <NextAuthProvider>
+          <Providers>
+            <Navbar />
+            <MobileMenu />
+            <PrimaryToaster />
+            {children}
+          </Providers>
+        </NextAuthProvider>
       </body>
     </html>
   )
