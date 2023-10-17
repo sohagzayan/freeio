@@ -56,7 +56,6 @@ const Navbar = () => {
                 onClick={async () => {
                   await signOut({ callbackUrl: "/", })
                 }}
-
               >Logout</button>}
 
             </div>
