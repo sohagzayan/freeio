@@ -1,3 +1,4 @@
+import LoginForm from "@/components/accounts/LoginForm"
 import Footer from "@/components/common/Footer/Footer"
 import Link from "next/link"
 
@@ -18,8 +19,8 @@ const Login = () => {
                             </h3>
                             <p className="text-[14px] font-[500] text-skin-dark_gray_shade font-primary">Don't have an account? <Link className="text-skin-green_shade" href="/account/register">Sign Up!</Link></p>
                         </div>
-                        {/* <LoginForm />
-                        <Divider />
+                        <LoginForm />
+                        {/* <Divider />
                         <AuthSocial /> */}
                     </div>
                 </div>
