@@ -1,3 +1,4 @@
+import type { Config } from "tailwindcss";
 const withMT = require("@material-tailwind/react/utils/withMT");
 
 type RecursiveKeyValuePair<T, U> = {
@@ -17,7 +18,7 @@ function withOpacity(
   };
 }
 
-module.exports = withMT({
+const config: Config = withMT({
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -74,4 +75,6 @@ module.exports = withMT({
     },
   },
   plugins: [],
+  important: true,
 });
+export default config;
