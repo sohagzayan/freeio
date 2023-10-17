@@ -2,7 +2,6 @@
 import { LoginSchema } from "@/FormValidationSchema/FormValidationSchema"
 import ButtonLarge from "@/components/common/Button/ButtonLarge"
 import { yupResolver } from "@hookform/resolvers/yup"
-import { Checkbox } from "@material-tailwind/react"
 import { signIn } from "next-auth/react"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
@@ -73,7 +72,7 @@ const LoginForm = () => {
             </div>
             <div className="flex items-center justify-between pb-2">
                 <div>
-                    <Checkbox label="Remember Me" crossOrigin={undefined} />
+                    {/* <Checkbox label="Remember Me" crossOrigin={undefined} /> */}
                 </div>
                 <div>
                     <Link className="text-[14px] font-primary text-skin-dark_gray_shade hover:text-skin-green_shade transition-all ease-in-out duration-150" href="/">Lost your password?</Link>
