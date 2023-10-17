@@ -6,7 +6,6 @@ import HighestRatedSeller from '@/components/Home/HighestRatedSeller/HighestRate
 import NeedSomethingDone from '@/components/Home/NeedSomethingDone/NeedSomethingDone'
 import TrendingServices from '@/components/Home/TrendingServices/TrendingServices'
 import Footer from '@/components/common/Footer/Footer'
-import { Button } from "@material-tailwind/react"
 import { useSession } from 'next-auth/react'
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
       <TrendingServices />
       <BestMarketplace />
       <HighestRatedSeller />
-      <Button >Error</Button>
+
       <Footer />
     </main>
   )
