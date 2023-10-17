@@ -2,6 +2,7 @@
 import { LoginSchema } from "@/FormValidationSchema/FormValidationSchema"
 import ButtonLarge from "@/components/common/Button/ButtonLarge"
 import { yupResolver } from "@hookform/resolvers/yup"
+import { Button } from "@material-tailwind/react"
 import { signIn } from "next-auth/react"
 import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
@@ -103,6 +104,7 @@ const LoginForm = () => {
             </div>
             <ButtonLarge
                 handleButton={handleButton} classList="bg-skin-green_shade border border-dark_gray_shade text-skin-white_shade w-full  hover:text-skin-white_shade hover:border-green_shade">Sign in</ButtonLarge>
+            <Button>error</Button>
         </form>
     )
 }

@@ -1,9 +1,8 @@
-import LoginForm from "@/components/accounts/LoginForm"
-import AuthSocial from "@/components/common/AuthSocial/AuthSocial"
-import Divider from "@/components/common/Divider/Divider"
-import Footer from "@/components/common/Footer/Footer"
-import { Button } from "@material-tailwind/react"
-import Link from "next/link"
+import LoginForm from "@/components/accounts/LoginForm";
+import AuthSocial from "@/components/common/AuthSocial/AuthSocial";
+import Divider from "@/components/common/Divider/Divider";
+import Footer from "@/components/common/Footer/Footer";
+import Link from "next/link";
 
 
 
@@ -25,7 +24,7 @@ const Login = () => {
                         <LoginForm />
                         <Divider />
                         <AuthSocial />
-                        <Button>Error</Button>
+
                     </div>
                 </div>
             </div>
