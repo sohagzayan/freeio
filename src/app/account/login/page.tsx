@@ -8,8 +8,8 @@ import Link from "next/link"
 
 const Login = () => {
     return (
-        <div className="bg-skin-peach_shade">
-            <div className="container mx-auto md:px-10 px-4 py-20 lg:w-[55%] md:w-[70%] w-[100%]">
+        <div className="bg-skin-peach_shade ">
+            <div className="container mx-auto md:px-10 px-4 py-20 lg:w-[55%] md:w-[70%] w-[100%] xl:w-[650px]">
                 <div className="">
                     <div className="text-center mb-10">
                         <h3 className="text-[32px] font-[700] text-skin-dark_gray_shade font-primary mb-2">Log In</h3>
