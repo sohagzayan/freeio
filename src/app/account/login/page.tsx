@@ -1,4 +1,3 @@
-import { Button } from "@/Matrial/Matrial"
 import LoginForm from "@/components/accounts/LoginForm"
 import AuthSocial from "@/components/common/AuthSocial/AuthSocial"
 import Divider from "@/components/common/Divider/Divider"
@@ -24,7 +23,6 @@ const Login = () => {
                             <p className="text-[14px] font-[500] text-skin-dark_gray_shade font-primary">Don't have an account? <Link className="text-skin-green_shade" href="/account/register">Sign Up!</Link></p>
                         </div>
                         <LoginForm />
-                        <Button>Button</Button>
                         <Divider />
                         <AuthSocial />
                     </div>
