@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import ReactStars from "react-rating-stars-component";
+// import ReactStars from "react-rating-stars-component";
 
 interface ProductsType {
     data: {
@@ -53,7 +53,7 @@ const ProductCart = ({ data }: ProductsType) => {
                     <span className="text-skin-red_crimson_shade text-[10px]">Hardcover</span>
                     <h3 className="font-[500] text-skin-dark_gray_shade">{data?.name}</h3>
                     <h5 className="flex items-center justify-center font-primary text-skin-dark_gray_shade  gap-1">
-                        <ReactStars
+                        {/* <ReactStars
                             count={5}
                             // onChange={ratingChanged}
                             value={data.reviews}
@@ -64,7 +64,7 @@ const ProductCart = ({ data }: ProductsType) => {
                             halfIcon={<i className="fa fa-star-half-alt"></i>}
                             fullIcon={<i className="fa fa-star"></i>}
                             activeColor="#ffd700"
-                        />
+                        /> */}
                         (2)
                     </h5>
 
