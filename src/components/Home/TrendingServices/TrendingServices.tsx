@@ -1,5 +1,5 @@
 "use client"
-import BookCard from "@/components/common/BookCard/BookCard";
+import ProductCart from "@/components/common/ProductCart/ProductCart";
 import { products } from "@/utility/products";
 import { useState } from "react";
 import 'swiper/css';
@@ -43,7 +43,7 @@ const TrendingServices = () => {
                         className="mySwiper"
 
                     >
-                        {products.slice(0, 5).map((p, i) => <SwiperSlide key={p.id + i}><BookCard data={p} /></SwiperSlide>)}
+                        {products.slice(0, 5).map((p, i) => <SwiperSlide key={p.id + i}><ProductCart data={p} /></SwiperSlide>)}
                     </Swiper>
                 </div>
             </div>

@@ -13,7 +13,7 @@ import Link from 'next/link';
 
 
 const Navbar = () => {
-  const { data: session } = useSession();
+  const { data: session, update: sessionUpdate } = useSession();
   const isOpen = useAppSelector((state) => state.mobileSideBarSlice.isOpen);
   const dispatch = useAppDispatch();
 
@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div className='bg-skin-white_shade '>
-      <div className='container mx-auto px-4 md:px-10 py-4 font-primary '>
+      <div className='px-4 md:px-10 py-4 font-primary '>
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-5'>
             <Link href="/">

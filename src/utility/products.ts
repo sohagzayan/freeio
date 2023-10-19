@@ -25,7 +25,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -41,7 +41,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -57,7 +57,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -73,7 +73,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -89,7 +89,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -105,7 +105,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -121,7 +121,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -137,7 +137,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
   {
@@ -153,7 +153,7 @@ export const products: ProductsType[] = [
     bookFormat: ["Hardcover"],
     images: [
       "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
-      "https://bookworm.madrasthemes.com/wp-content/uploads/2020/08/18-300x449-1.jpg",
+      "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/a023ddc3b_176874.jpg",
     ],
   },
 ];

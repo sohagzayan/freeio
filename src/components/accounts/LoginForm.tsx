@@ -17,6 +17,7 @@ const LoginForm = () => {
     const searchParams = useSearchParams();
     const [checkBox, setCheckBox] = useState<boolean>(false)
     const callbackUrl = searchParams.get("callbackUrl") || "/";
+
     type Inputs = {
         email: string
         password: string,
