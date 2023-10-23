@@ -1,22 +1,23 @@
 "use client"
-import { AnimatePresence, motion } from "framer-motion"
-import { ReactNode, useState } from "react"
+import { AnimatePresence, motion } from "framer-motion";
+import { ReactNode, useState } from "react";
 interface ControlFilterLayoutType {
     children: ReactNode,
-    title: string
+    title: string;
+    icon?: boolean
 }
 
-const ControlFilterLayout = ({ title, children }: ControlFilterLayoutType) => {
+const ControlFilterLayout = ({ title, icon, children }: ControlFilterLayoutType) => {
     const [showFilterList, setShowFilterList] = useState(true)
 
     return (
         <div className="border-b py-1">
             <div className="relative">
-                <button onClick={() => setShowFilterList((prev) => !prev)} className="flex  items-center justify-between w-full gap-2 font-primary text-skin-dark_gray_shade font-[500] cursor-pointer  px-[20px] py-[7px] rounded-[4px]" type="button">{title}
+                {icon && <button onClick={() => setShowFilterList((prev) => !prev)} className="flex  items-center justify-between w-full gap-2 font-primary text-skin-dark_gray_shade font-[500] cursor-pointer  px-[20px] py-[7px] rounded-[4px]" type="button">{title}
                     <svg className="w-2.5 h-2.5 ml-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4" />
                     </svg>
-                </button>
+                </button>}
                 <AnimatePresence initial={false}>
                     {showFilterList &&
                         <motion.div

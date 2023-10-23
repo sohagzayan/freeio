@@ -13,7 +13,6 @@ const ControlFilter = () => {
     return (
         <div className="">
             <div>
-                {/* <AllFilterSideDrawer /> */}
                 <Availability />
                 <Price />
                 <Brand />

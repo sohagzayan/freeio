@@ -34,7 +34,7 @@ const Profile = () => {
                 />
             </button>
             <motion.nav
-                className="absolute w-[300px] top-10 right-10 bg-skin-white_shade shadow shadow-primary_shadow border rounded-lg p-5"
+                className="absolute z-50 w-[300px] top-10 right-10 bg-skin-white_shade shadow shadow-primary_shadow border rounded-lg p-5"
                 initial={{ opacity: 0, scale: .2, y: -100, x: 100, skew: "30deg" }}
                 animate={isOpen ? "open" : "closed"}
                 variants={variants}
